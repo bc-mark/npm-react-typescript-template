@@ -1,6 +1,6 @@
 {
   "name": "@bc-mark/style-system",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "private": false,
   "description": "style system for bc",
   "author": "Mark <mark@betcloud.com.au>",
@@ -19,6 +19,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "formik": "^2.2.9",
     "framer-motion": "^4.1.17"
   },
   "peerDependencies": {
