@@ -1,6 +1,6 @@
 {
   "name": "@bc-mark/style-system",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
   "description": "style system for bc",
   "author": "Mark <mark@betcloud.com.au>",
@@ -15,7 +15,12 @@
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^4.1.17"
+  },
   "peerDependencies": {
     "react": ">= 16.8.0 < 2",
     "react-dom": ">= 16.8.0 < 2"
