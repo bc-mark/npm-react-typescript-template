@@ -1,11 +1,20 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import React, { ReactNode } from 'react'
-import theme from '../Theme'
+import {
+  ChakraProvider,
+  ChakraProviderProps,
+  extendTheme,
+} from '@chakra-ui/react'
+import React from 'react'
+import baseTheme from '../Theme'
 
-type TProvider = {
-  children: ReactNode
-}
-
-export default function BCProvider({ children }: TProvider) {
-  return <ChakraProvider theme={theme}>{children}</ChakraProvider>
+export default function BCProvider({
+  children,
+  theme,
+  ...rest
+}: ChakraProviderProps) {
+  const _theme = extendTheme({ ...baseTheme, theme })
+  return (
+    <ChakraProvider theme={_theme} {...rest}>
+      {children}
+    </ChakraProvider>
+  )
 }

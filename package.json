@@ -20,7 +20,8 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "formik": "^2.2.9",
-    "framer-motion": "^4.1.17"
+    "framer-motion": "^4.1.17",
+    "styled-icons": "^10.45.0"
   },
   "peerDependencies": {
     "react": ">= 16.8.0 < 2",

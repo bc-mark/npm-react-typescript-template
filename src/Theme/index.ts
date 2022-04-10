@@ -1,8 +1,7 @@
-import { extendTheme } from '@chakra-ui/react'
 import { lineHeights } from './Foundations/LineHeight'
 
-export default extendTheme({
+export default {
   theme: 'base',
   lineHeights,
   config: { cssVarPrefix: 'bc' },
-})
+}
